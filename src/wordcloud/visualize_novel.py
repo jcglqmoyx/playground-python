@@ -1,15 +1,15 @@
-import wordcloud
 import matplotlib.pyplot as plt
+import wordcloud
+
 
 def generate_wordcloud():
-    file = open('/home/jcglqmoyx/Desktop/Lolita.txt', 'r')
+    file = open('/home/jcglqmoyx/Desktop/Gulliver\'s Travels - Jonathan Swift.txt', 'r')
     txt = file.read()
     # import jieba
     # seg_list = jieba.cut(txt, use_paddle=True)
     # txt = ' '.join(list(seg_list))
     # print("Paddle Mode: " + '/'.join(list(seg_list)))
 
-    # backgroup_Image = plt.imread('/home/pi/Downloads/map.jpg')
     w = wordcloud.WordCloud(
         background_color='black',
         # mask=backgroup_Image,  # 背景图
