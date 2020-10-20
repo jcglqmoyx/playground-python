@@ -1,10 +1,11 @@
-import matplotlib.pyplot as plt
 import wordcloud
+import matplotlib.pyplot as plt
 
 
 def generate_wordcloud():
-    file = open('/home/jcglqmoyx/Desktop/Gulliver\'s Travels - Jonathan Swift.txt', 'r')
+    file = open('/home/jcglqmoyx/Desktop/visualize_novel.py', 'r')
     txt = file.read()
+    file.close()
     # import jieba
     # seg_list = jieba.cut(txt, use_paddle=True)
     # txt = ' '.join(list(seg_list))
