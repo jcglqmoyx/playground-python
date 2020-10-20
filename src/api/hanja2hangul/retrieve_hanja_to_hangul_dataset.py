@@ -12,7 +12,6 @@ chinese_characters = chinese_characters_file.read()
 chinese_characters_file.close()
 result_file = open('result.txt', 'a')
 
-
 for chinese_character in chinese_characters:
     try:
         chrome_options = webdriver.ChromeOptions()
