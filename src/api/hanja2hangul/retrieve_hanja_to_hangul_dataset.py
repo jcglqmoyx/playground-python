@@ -26,7 +26,7 @@ for chinese_character in chinese_characters:
         korean = browser.find_element_by_class_name(hangul_output_class).text[-1]
         print(korean, '..........')
         result_file.write(chinese_character + ' ' + korean + '\n')
-        input_box.clear()
+        # input_box.clear()
         browser.quit()
         time.sleep(1)
     except Exception:
