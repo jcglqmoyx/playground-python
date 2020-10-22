@@ -23,7 +23,7 @@ for chinese_character in chinese_characters:
         browser.find_element_by_id(hanja_input_id).click()
         time.sleep(1)
         korean = browser.find_element_by_class_name(hangul_output_class).text[-1]
-        print(korean, '..........')
+        print(chinese_character,korean, '..........')
         result_file.write(chinese_character + ' ' + korean + '\n')
         # input_box.clear()
         browser.quit()
